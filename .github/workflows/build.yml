@@ -28,10 +28,12 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y git zip unzip autoconf libtool pkg-config zlib1g-dev libncurses-dev libtinfo6 cmake libffi-dev libssl-dev automake autopoint gettext
 
-      - name: Install Buildozer and dependencies
+      - name: Install Buildozer and P4A
         run: |
           pip install --upgrade pip
-          pip install buildozer "cython<3.0" "setuptools<81" pillow
+          pip install "cython<3.0" "setuptools<81" pillow appdirs colorama jinja2 sh packaging toml build
+          pip install git+https://github.com
+          pip install git+https://github.com
 
       - name: Build APK
         run: |
