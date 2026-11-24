@@ -7,7 +7,7 @@ source.include_exts = py,png,jpg,kv,atlas
 version = 1.0
 icon.filename = %(source.dir)s/icon.png.jpg
 
-requirements = python3,pygame,sdl2,sdl2_image,sdl2_mixer,sdl2_ttf
+requirements = python3==3.10.12,hostpython3==3.10.12,pygame,sdl2,sdl2_image,sdl2_mixer,sdl2_ttf
 
 orientation = landscape
 fullscreen = 1
